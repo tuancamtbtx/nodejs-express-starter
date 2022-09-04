@@ -1,0 +1,66 @@
+{
+  "name": "nodejs-express-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/app.js",
+    "build": "babel src --out-dir dist",
+    "test": "jest --watch",
+    "fixcode": "yarn run lint && yarn run overwrite",
+    "start": "NODE_ENV=production node bootstrap.js",
+    "postinstall": "link-module-alias"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuancamtbtx/nodejs-express-starter.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "tuancamtbtx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuancamtbtx/nodejs-express-starter/issues"
+  },
+  "homepage": "https://github.com/tuancamtbtx/nodejs-express-starter#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "babel-cli": "^6.26.0",
+    "boom": "^7.3.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "link-module-alias": "^1.2.0",
+    "lint": "^0.7.0",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.7",
+    "multer": "^1.4.3",
+    "slug": "^5.1.0",
+    "swagger-ui-express": "^4.1.6",
+    "uuid": "^8.3.2",
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.14.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "jest": "^27.2.2",
+    "mocha": "^9.1.2",
+    "nodemon": "^1.9.2",
+    "supertest": "^6.1.6"
+  },
+  "_moduleAliases": {
+    "@": "src"
+  }
+}

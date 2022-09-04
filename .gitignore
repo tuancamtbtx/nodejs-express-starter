@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+test.js
+*.log
+*.log
+logs/*.log
+.env
+dist
